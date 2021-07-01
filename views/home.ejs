@@ -1,0 +1,15 @@
+<%- include('partials/header'); -%>
+<h2>Your entries:</h2>
+
+<div class="entry">
+  <% entries.forEach((entry) => { %>
+    <div class="entry-box">
+      <h3><%=entry.date%></h3>
+      <p class="entry-content"><%=entry.entry.substring(0, 80) + ' ...'%></p>
+      <p class="entry-content">Tips: <%=entry.tips.substring(0, 80) + ' ...'%><a href="/entries/<%=entry._id%>"> Read More</a></p>
+    </div>
+  <% }) %>
+</div>
+
+
+<%- include('partials/footer'); -%>

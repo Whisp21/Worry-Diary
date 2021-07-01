@@ -1,0 +1,15 @@
+<%- include('partials/header'); -%>
+
+<h2>New entry:</h2>
+
+<div>
+  <form class="form" action="/compose" method="post">
+    <input type="date" name="date"/>
+    <textarea name="entry" placeholder="What are you worried about?" rows="8" cols="80"></textarea>
+    <textarea name="tips" placeholder="Name 2 things you can do to cope with this worry:" rows="2" cols="80"></textarea>
+    <button type="submit" name="button">Save</button>
+  </form>
+</div>
+
+
+<%- include('partials/footer'); -%>
